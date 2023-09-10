@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Миша\\Алгоритми і структури даних\\Lab4\\Lab4.csproj": {}
+    "F:\\Миша\\Алгоритми і структури даних\\Homework-algorithms-and-data-structures\\Lab4\\Lab4.csproj": {}
   },
   "projects": {
-    "F:\\Миша\\Алгоритми і структури даних\\Lab4\\Lab4.csproj": {
+    "F:\\Миша\\Алгоритми і структури даних\\Homework-algorithms-and-data-structures\\Lab4\\Lab4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Миша\\Алгоритми і структури даних\\Lab4\\Lab4.csproj",
+        "projectUniqueName": "F:\\Миша\\Алгоритми і структури даних\\Homework-algorithms-and-data-structures\\Lab4\\Lab4.csproj",
         "projectName": "Lab4",
-        "projectPath": "F:\\Миша\\Алгоритми і структури даних\\Lab4\\Lab4.csproj",
+        "projectPath": "F:\\Миша\\Алгоритми і структури даних\\Homework-algorithms-and-data-structures\\Lab4\\Lab4.csproj",
         "packagesPath": "C:\\Users\\AMD\\.nuget\\packages\\",
-        "outputPath": "F:\\Миша\\Алгоритми і структури даних\\Lab4\\obj\\",
+        "outputPath": "F:\\Миша\\Алгоритми і структури даних\\Homework-algorithms-and-data-structures\\Lab4\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

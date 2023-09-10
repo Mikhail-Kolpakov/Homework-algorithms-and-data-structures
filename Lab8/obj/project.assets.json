@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Миша\\Алгоритми і структури даних\\Lab8\\Lab8.csproj",
+      "projectUniqueName": "F:\\Миша\\Алгоритми і структури даних\\Homework-algorithms-and-data-structures\\Lab8\\Lab8.csproj",
       "projectName": "Lab8",
-      "projectPath": "F:\\Миша\\Алгоритми і структури даних\\Lab8\\Lab8.csproj",
+      "projectPath": "F:\\Миша\\Алгоритми і структури даних\\Homework-algorithms-and-data-structures\\Lab8\\Lab8.csproj",
       "packagesPath": "C:\\Users\\AMD\\.nuget\\packages\\",
-      "outputPath": "F:\\Миша\\Алгоритми і структури даних\\Lab8\\obj\\",
+      "outputPath": "F:\\Миша\\Алгоритми і структури даних\\Homework-algorithms-and-data-structures\\Lab8\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
