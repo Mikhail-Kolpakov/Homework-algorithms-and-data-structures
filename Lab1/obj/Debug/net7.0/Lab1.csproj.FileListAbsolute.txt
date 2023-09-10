@@ -1,0 +1,30 @@
+F:\Миша\Алгоритми і структури даних\Лабораторна робота 1\bin\Debug\net7.0\Lab1.exe
+F:\Миша\Алгоритми і структури даних\Лабораторна робота 1\bin\Debug\net7.0\Lab1.deps.json
+F:\Миша\Алгоритми і структури даних\Лабораторна робота 1\bin\Debug\net7.0\Lab1.runtimeconfig.json
+F:\Миша\Алгоритми і структури даних\Лабораторна робота 1\bin\Debug\net7.0\Lab1.dll
+F:\Миша\Алгоритми і структури даних\Лабораторна робота 1\bin\Debug\net7.0\Lab1.pdb
+F:\Миша\Алгоритми і структури даних\Лабораторна робота 1\obj\Debug\net7.0\Lab1.csproj.AssemblyReference.cache
+F:\Миша\Алгоритми і структури даних\Лабораторна робота 1\obj\Debug\net7.0\Lab1.GeneratedMSBuildEditorConfig.editorconfig
+F:\Миша\Алгоритми і структури даних\Лабораторна робота 1\obj\Debug\net7.0\Lab1.AssemblyInfoInputs.cache
+F:\Миша\Алгоритми і структури даних\Лабораторна робота 1\obj\Debug\net7.0\Lab1.AssemblyInfo.cs
+F:\Миша\Алгоритми і структури даних\Лабораторна робота 1\obj\Debug\net7.0\Lab1.csproj.CoreCompileInputs.cache
+F:\Миша\Алгоритми і структури даних\Лабораторна робота 1\obj\Debug\net7.0\Lab1.dll
+F:\Миша\Алгоритми і структури даних\Лабораторна робота 1\obj\Debug\net7.0\refint\Lab1.dll
+F:\Миша\Алгоритми і структури даних\Лабораторна робота 1\obj\Debug\net7.0\Lab1.pdb
+F:\Миша\Алгоритми і структури даних\Лабораторна робота 1\obj\Debug\net7.0\Lab1.genruntimeconfig.cache
+F:\Миша\Алгоритми і структури даних\Лабораторна робота 1\obj\Debug\net7.0\ref\Lab1.dll
+F:\Миша\Алгоритми і структури даних\Lab1\bin\Debug\net7.0\Lab1.exe
+F:\Миша\Алгоритми і структури даних\Lab1\bin\Debug\net7.0\Lab1.deps.json
+F:\Миша\Алгоритми і структури даних\Lab1\bin\Debug\net7.0\Lab1.runtimeconfig.json
+F:\Миша\Алгоритми і структури даних\Lab1\bin\Debug\net7.0\Lab1.dll
+F:\Миша\Алгоритми і структури даних\Lab1\bin\Debug\net7.0\Lab1.pdb
+F:\Миша\Алгоритми і структури даних\Lab1\obj\Debug\net7.0\Lab1.csproj.AssemblyReference.cache
+F:\Миша\Алгоритми і структури даних\Lab1\obj\Debug\net7.0\Lab1.GeneratedMSBuildEditorConfig.editorconfig
+F:\Миша\Алгоритми і структури даних\Lab1\obj\Debug\net7.0\Lab1.AssemblyInfoInputs.cache
+F:\Миша\Алгоритми і структури даних\Lab1\obj\Debug\net7.0\Lab1.AssemblyInfo.cs
+F:\Миша\Алгоритми і структури даних\Lab1\obj\Debug\net7.0\Lab1.csproj.CoreCompileInputs.cache
+F:\Миша\Алгоритми і структури даних\Lab1\obj\Debug\net7.0\Lab1.dll
+F:\Миша\Алгоритми і структури даних\Lab1\obj\Debug\net7.0\refint\Lab1.dll
+F:\Миша\Алгоритми і структури даних\Lab1\obj\Debug\net7.0\Lab1.pdb
+F:\Миша\Алгоритми і структури даних\Lab1\obj\Debug\net7.0\Lab1.genruntimeconfig.cache
+F:\Миша\Алгоритми і структури даних\Lab1\obj\Debug\net7.0\ref\Lab1.dll
