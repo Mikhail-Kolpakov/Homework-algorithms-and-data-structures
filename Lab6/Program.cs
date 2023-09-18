@@ -21,35 +21,67 @@ foreach (int value in nValues)
     MergeSorting.GenerateNumbers(rand, numbers, value);
     stopwatch.Stop();
 
-    TimeSpan elapsedGenerating = stopwatch.Elapsed;
     //DataOutput.PrintToConsoleValues(numbers, DataOutput.TypeOfOperation.Random);
-    Console.WriteLine($"\nШвидкість генерування списку з випадковими числами: {elapsedGenerating.TotalMilliseconds} мс");
+    //Console.WriteLine($"\nШвидкість генерування списку з випадковими числами: {stopwatch.Elapsed.TotalMilliseconds} мс");
 
+    //За зростанням
     (assigments, comparisons) = (0, 0);
-    stopwatch.Start();
+    stopwatch.Restart();
     int left = 0;
     int right = numbers.Count - 1;
     MergeSorting.MergeSort(numbers, left, right, MergeSorting.TypeOfSorting.Ascending, ref assigments , ref comparisons);
     stopwatch.Stop();
 
-    TimeSpan elapsedSortingAsc = stopwatch.Elapsed;
     //DataOutput.PrintToConsoleValues(numbers, DataOutput.TypeOfOperation.Ascending);
-    Console.WriteLine($"\nШвидкість сортування списку за зростанням: {elapsedSortingAsc.TotalMilliseconds} мс");
-    Console.WriteLine(String.Format("Було проведено операцій присвоєння: {0:#,###} шт.", assigments));
-    Console.WriteLine(String.Format("Було проведено операцій порівняння: {0:#,###} шт.", comparisons));
+    Output(assigments, comparisons, stopwatch, "за зростанням з випадковими числами");
 
+    (assigments, comparisons) = (0, 0);
+    stopwatch.Restart();
+    MergeSorting.MergeSort(numbers, left, right, MergeSorting.TypeOfSorting.Ascending, ref assigments, ref comparisons);
+    stopwatch.Stop();
+
+    Output(assigments, comparisons, stopwatch, "за зростанням з числами за зростанням");
+
+    MergeSorting.MergeSort(numbers, left, right, MergeSorting.TypeOfSorting.Descending, ref assigments, ref comparisons);
+    (assigments, comparisons) = (0, 0);
+    stopwatch.Restart();
+    MergeSorting.MergeSort(numbers, left, right, MergeSorting.TypeOfSorting.Ascending, ref assigments, ref comparisons);
+    stopwatch.Stop();
+
+    Output(assigments, comparisons, stopwatch, "за зростанням з числами за спаданням");
+
+    //За спаданням
     MergeSorting.Shuffle(numbers);
 
     (assigments, comparisons) = (0, 0);
-    stopwatch.Start();
-    left = 0;
-    right = numbers.Count - 1;
+    stopwatch.Restart();
     MergeSorting.MergeSort(numbers, left, right, MergeSorting.TypeOfSorting.Descending, ref assigments, ref comparisons);
     stopwatch.Stop();
 
-    TimeSpan elapsedSortingDesc = stopwatch.Elapsed;
     //DataOutput.PrintToConsoleValues(numbers, DataOutput.TypeOfOperation.Descending);
-    Console.WriteLine($"\nШвидкість сортування списку за спаданням: {elapsedSortingDesc.TotalMilliseconds} мс");
+    Output(assigments, comparisons, stopwatch, "за спаданням з випадковими числами");
+
+    (assigments, comparisons) = (0, 0);
+    stopwatch.Restart();
+    MergeSorting.MergeSort(numbers, left, right, MergeSorting.TypeOfSorting.Descending, ref assigments, ref comparisons);
+    stopwatch.Stop();
+
+    //DataOutput.PrintToConsoleValues(numbers, DataOutput.TypeOfOperation.Descending);
+    Output(assigments, comparisons, stopwatch, "за спаданням з числами за спаданням");
+
+    MergeSorting.MergeSort(numbers, left, right, MergeSorting.TypeOfSorting.Ascending, ref assigments, ref comparisons);
+    (assigments, comparisons) = (0, 0);
+    stopwatch.Restart();
+    MergeSorting.MergeSort(numbers, left, right, MergeSorting.TypeOfSorting.Descending, ref assigments, ref comparisons);
+    stopwatch.Stop();
+
+    //DataOutput.PrintToConsoleValues(numbers, DataOutput.TypeOfOperation.Descending);
+    Output(assigments, comparisons, stopwatch, "за спаданням з числами за зростанням");
+}
+
+void Output(int assigments, int comparisons, Stopwatch time, string typeOfTimeRecording)
+{
+    Console.WriteLine($"\nШвидкість сортування списку {typeOfTimeRecording}: {time.Elapsed.TotalMilliseconds} мс");
     Console.WriteLine(String.Format("Було проведено операцій присвоєння: {0:#,###} шт.", assigments));
     Console.WriteLine(String.Format("Було проведено операцій порівняння: {0:#,###} шт.", comparisons));
 }
