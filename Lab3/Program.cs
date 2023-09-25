@@ -1,5 +1,6 @@
 ﻿//Варіант #9
 using System.Text;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 const int givenPerc = 75;
 const int N = 9 * 5 + 50;
@@ -21,14 +22,14 @@ for (int i = 0; i < N; i++)
     numbers.Add(random_number, random_number);
 }
 
-//Видаляємо парні числа з хеш-таблиці
-foreach (KeyValuePair<int, int> number in numbers)
-    if (number.Value % 2 == 0)
-        numbers.Remove(number.Key);
-
-//Виводимо кінцеві непарні значення
+//Перебираємо хеш-таблицю
 Console.WriteLine("Кінцеві непарні значення з хеш-таблиці: ");
 foreach (KeyValuePair<int, int> number in numbers)
-    Console.Write($"{number.Value} ");
+{
+    if (number.Value % 2 == 0)
+        numbers.Remove(number.Key); //Видаляємо парні значення
+    else
+        Console.Write($"{number.Value} "); //Виводимо кінцеві непарні значення
+}
 
 Console.WriteLine();
