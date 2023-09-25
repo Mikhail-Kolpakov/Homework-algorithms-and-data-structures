@@ -1,6 +1,5 @@
 ﻿//Варіант #9
 using System.Text;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 const int givenPerc = 75;
 const int N = 9 * 5 + 50;
