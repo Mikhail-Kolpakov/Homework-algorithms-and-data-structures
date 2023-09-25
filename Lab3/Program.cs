@@ -3,7 +3,7 @@ using System.Text;
 
 const int givenPerc = 75;
 const int N = 9 * 5 + 50;
-int S = (int)(N * ((double)givenPerc / 100));
+const int S = (int)(N * ((double)givenPerc / 100));
 Random rand = new Random();
 Dictionary<int, int> numbers = new Dictionary<int, int>(S);
 
