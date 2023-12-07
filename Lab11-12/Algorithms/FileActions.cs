@@ -39,10 +39,10 @@ public static class FileActions
         int sum = 0; // Вага остового дерева
         await using var writer = new StreamWriter(path, true);
 
+        await writer.WriteLineAsync($"Остовне дерево за допомогою алгоритму {algName}: ");
+        
         if (results is int[] intArray)
         {
-            await writer.WriteLineAsync($"Остовне дерево за допомогою алгоритму {algName}: ");
-            
             if (parent is null)
             {
                 Console.WriteLine($"Не вистачає параметрів при типі даних {typeof(T)}");
@@ -58,8 +58,6 @@ public static class FileActions
         }
         else if (results is List<Edge> edgeList)
         {
-            await writer.WriteLineAsync($"Остовне дерево за допомогою алгоритму {algName}: ");
-
             foreach (var edge in edgeList)
             {
                 sum += edge.Weight;
