@@ -1,9 +1,11 @@
 ﻿namespace Lab11_12.Algorithms.KruskalsAlg;
 
-public class KruskalsAlg
+public static class KruskalsAlg
 {
     private const string InputFilePath = "InputData.txt";
     private const string OutputFilePath = "OutputData.txt";
+    public static int Comparisons { get; private set; }
+    public static int Assigments { get; private set; }
 
     public static async Task FindMinimumSpanningTree() // Метод для виконання основних розрахунків
     {
@@ -35,11 +37,18 @@ public class KruskalsAlg
             int root1 = Find(parent, edge.Source);
             int root2 = Find(parent, edge.Destination);
 
+            Comparisons += 2;
+            Assigments += 2;
+            
             if (root1 != root2) // Перевірка, чи додавання ребра не створить цикл
             {
                 minimumSpanningTree.Add(edge);
                 Union(parent, root1, root2);
+                
+                Assigments += 2;
             }
+
+            Comparisons++;
         }
 
         await FileActions.WriteGraphToFile(OutputFilePath, minimumSpanningTree, "Крускала");

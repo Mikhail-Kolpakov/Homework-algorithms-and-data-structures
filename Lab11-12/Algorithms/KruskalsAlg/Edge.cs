@@ -1,6 +1,6 @@
 ﻿namespace Lab11_12.Algorithms.KruskalsAlg;
 
-// Клас, що характеризує прдедставлення ребра графа
+// Клас, що характеризує представлення ребра графа
 public class Edge
 {
     public int Source { get; set; } // Вершина, з якої виходить ребро
