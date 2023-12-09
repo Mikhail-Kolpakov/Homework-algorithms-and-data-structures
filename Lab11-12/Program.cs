@@ -10,7 +10,7 @@ Stopwatch stopwatch = new Stopwatch();
 Console.OutputEncoding = Encoding.UTF8;
 await using (new StreamWriter(outputFilePath, false)) {} // Очищаємо вихідний файл при запуску програми
 
-// Зміряємо алгоритм Прима
+// Заміряємо алгоритм Прима
 stopwatch.Start();
 await PrimsAlg.FindMinimumSpanningTree();
 stopwatch.Stop();
