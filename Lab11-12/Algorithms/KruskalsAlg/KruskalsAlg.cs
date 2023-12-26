@@ -2,16 +2,15 @@
 
 public static class KruskalsAlg
 {
-    private const string InputFilePath = "InputData.txt";
     private const string OutputFilePath = "OutputData.txt";
-    public static int Comparisons { get; private set; }
-    public static int Assigments { get; private set; }
+    public static int Comparisons { get; private set; } // Властивість, що характеризує кількість порівнянь
+    public static int Assigments { get; private set; } // Властивість, що характеризує кількість присвоювань
 
-    public static async Task FindMinimumSpanningTree() // Метод для виконання основних розрахунків
+    public static async Task FindMinimumSpanningTree(string inputFilePath) // Метод для виконання основних розрахунків
     {
-        int[,]? graph = await FileActions.ReadGraphFromFile(InputFilePath); // Граф у вигляді матриці ваг
+        int[,]? graph = await FileActions.ReadGraphFromFile(inputFilePath); // Граф у вигляді матриці ваг
         
-        if (graph is null)
+        if (graph is null) // Перевірка на коректності файлу з вхідними даними
         {
             Console.WriteLine("Файлу з вхідними даними не існує або не є коректний");
             return;
@@ -51,7 +50,7 @@ public static class KruskalsAlg
             Comparisons++;
         }
 
-        await FileActions.WriteGraphToFile(OutputFilePath, minimumSpanningTree, "Крускала");
+        await FileActions.WriteGraphToFile(OutputFilePath, minimumSpanningTree, "Крускала"); // Виводимо результати 
     }
 
     private static int Find(int[] parent, int i) // Пошук кореня дерева 

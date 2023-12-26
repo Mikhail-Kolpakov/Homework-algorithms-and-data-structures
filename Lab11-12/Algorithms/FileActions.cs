@@ -34,7 +34,7 @@ public static class FileActions
             return null;
     }
     
-    public static async Task WriteGraphToFile<T>(string path, T results, string algName, int[]? parent = null) // Методя для виведення кінцевих результатів до файлу
+    public static async Task WriteGraphToFile<T>(string path, T results, string algName, int[]? parent = null) // Метод для виведення кінцевих результатів до файлу
     {
         int sum = 0; // Вага остового дерева
         await using var writer = new StreamWriter(path, true);

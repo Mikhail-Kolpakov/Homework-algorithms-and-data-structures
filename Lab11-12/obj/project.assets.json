@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Миша\\Алгоритми і структури даних\\Homework-algorithms-and-data-structures\\Lab11-12\\Lab11-12.csproj",
-      "projectName": "Lab11-12",
-      "projectPath": "D:\\Миша\\Алгоритми і структури даних\\Homework-algorithms-and-data-structures\\Lab11-12\\Lab11-12.csproj",
+      "projectUniqueName": "D:\\Миша\\Алгоритми і структури даних\\Homework-algorithms-and-data-structures\\Lab11-12\\IDZ.csproj",
+      "projectName": "IDZ",
+      "projectPath": "D:\\Миша\\Алгоритми і структури даних\\Homework-algorithms-and-data-structures\\Lab11-12\\IDZ.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "D:\\Миша\\Алгоритми і структури даних\\Homework-algorithms-and-data-structures\\Lab11-12\\obj\\",
       "projectStyle": "PackageReference",
